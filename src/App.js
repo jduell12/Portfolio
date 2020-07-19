@@ -1,15 +1,11 @@
 import React, {useState} from 'react';
-import {Route, useParams} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 
 //context
 import {NavBarContext} from './contexts/NavBarContext'
 
 //components
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
+import {Home, NavBar, Contact, Portfolio, Resume} from './components'
 
 
 function App() {
