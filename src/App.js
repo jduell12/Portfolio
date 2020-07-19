@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 //context
 import {NavBarContext} from './contexts/NavBarContext'
@@ -19,10 +19,12 @@ function App() {
       <NavBarContext.Provider value={{onPage, setPage}}>
         <NavBar />
       </NavBarContext.Provider>
-      <Route exact path = "/Portfolio" component={Portfolio} />
-      <Route exact path = "/Resume" component={Resume} />
-      <Route exact path = "/Contact" component={Contact} />
-      <Route exact path = "/" component={Home} />
+      <Switch>
+        <Route exact path = "/Portfolio" component={Portfolio} />
+        <Route exact path = "/Resume" component={Resume} />
+        <Route exact path = "/Contact" component={Contact} />
+        <Route exact path = "/" component={Home} />
+      </Switch>
     </div>
   );
 }
