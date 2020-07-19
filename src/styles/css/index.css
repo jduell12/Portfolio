@@ -167,3 +167,6 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
+.on {
+  font-weight: bold;
+}

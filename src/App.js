@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Route} from 'react-router-dom';
+import {Route, useParams} from 'react-router-dom';
 
 //context
 import {NavBarContext} from './contexts/NavBarContext'
@@ -13,18 +13,12 @@ import Contact from './components/Contact';
 
 
 function App() {
-  const initialPage = {
-    home: true,
-    portfolio: false,
-    resume: false,
-    contact: false
-  }
 
-  const [onPage, setPage] = useState(initialPage);
+  const [onPage, setPage] = useState('home');
 
   return (
     <div className="App">
-      <NavBarContext.Provider value={{onPage}}>
+      <NavBarContext.Provider value={{onPage, setPage}}>
         <NavBar />
       </NavBarContext.Provider>
       <Route exact path = "/Portfolio" component={Portfolio} />
