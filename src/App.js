@@ -5,7 +5,9 @@ import {Route} from 'react-router-dom';
 import {NavBarContext} from './contexts/NavBarContext'
 
 //components
-import {Home, NavBar, Contact, Portfolio, Resume} from './components'
+import {
+  Home, NavBar, Contact, Portfolio, Resume
+} from './components'
 
 
 function App() {
