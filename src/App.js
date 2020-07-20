@@ -6,7 +6,7 @@ import {NavBarContext} from './contexts/NavBarContext'
 
 //components
 import {
-  Home, NavBar, Contact, Portfolio, Resume
+  Home, NavBar, Contact, Portfolio
 } from './components'
 
 

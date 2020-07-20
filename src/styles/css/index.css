@@ -173,3 +173,18 @@ nav {
 .home {
   margin: 2%;
 }
+.home img {
+  border-radius: 30%;
+  width: 15%;
+  margin-top: 1%;
+}
+.home b {
+  font-weight: bold;
+}
+.home .about {
+  margin-top: 1%;
+  text-align: justify;
+}
+.home .about p {
+  margin: 1% 0;
+}
