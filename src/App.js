@@ -21,7 +21,6 @@ function App() {
       </NavBarContext.Provider>
       <Switch>
         <Route exact path = "/Portfolio" component={Portfolio} />
-        <Route exact path = "/Resume" component={Resume} />
         <Route exact path = "/Contact" component={Contact} />
         <Route exact path = "/" component={Home} />
       </Switch>
