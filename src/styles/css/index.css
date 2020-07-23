@@ -166,6 +166,13 @@ a {
   text-decoration: none;
   color: black;
 }
+.background {
+  margin: 3% 10%;
+  padding: 3%;
+  background: rgba(27, 31, 34, 0.85);
+  color: #FFFFFF;
+  border-radius: 1%;
+}
 nav {
   margin: 1% 0;
   display: flex;
@@ -176,24 +183,23 @@ nav {
   font-weight: bolder;
   font-size: 1.9rem;
 }
-.home {
+.background {
   margin: 3% 10%;
   padding: 3%;
   background: rgba(27, 31, 34, 0.85);
   color: #FFFFFF;
   border-radius: 1%;
 }
-.home img {
+.background img {
   border-radius: 50%;
   width: 25%;
   padding: 1%;
   margin: 1.5%;
 }
-.home h1,
-.home h2 {
+.background .homeTitle {
   font-family: cursive;
 }
-.home p {
+.background p {
   margin: 3%;
   font-family: 'Rowdies', cursive;
   letter-spacing: 2px;
