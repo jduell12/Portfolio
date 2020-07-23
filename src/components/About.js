@@ -10,9 +10,12 @@ const About = () => {
                 <div className="front">
                     <h3>Front End</h3>
                     <ul>
+                        <li>Git</li>
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>Git</li>
+                        <li>BootStrap</li>
+                        <li>ReactStrap</li>
+                        <li>Styled Components</li>
                         <li>JavaScript</li>
                         <li>React</li>
                         <li>Redux</li>
