@@ -183,23 +183,28 @@ nav {
   font-weight: bolder;
   font-size: 1.9rem;
 }
-.background {
+.background,
+.home {
   margin: 3% 10%;
   padding: 3%;
   background: rgba(27, 31, 34, 0.85);
   color: #FFFFFF;
   border-radius: 1%;
+  text-align: center;
 }
-.background img {
+.background img,
+.home img {
   border-radius: 50%;
   width: 25%;
   padding: 1%;
   margin: 1.5%;
 }
-.background .homeTitle {
+.background .homeTitle,
+.home .homeTitle {
   font-family: cursive;
 }
-.background p {
+.background p,
+.home p {
   margin: 3%;
   font-family: 'Rowdies', cursive;
   letter-spacing: 2px;
@@ -232,4 +237,23 @@ nav {
   color: #ffffff;
   line-height: 150%;
   text-align: center;
+}
+.background .skillTitle,
+.about .skillTitle {
+  margin: 2% 0;
+}
+.background .aboutP,
+.about .aboutP {
+  text-align: justify;
+  margin: 5%;
+}
+.background .skills,
+.about .skills {
+  display: flex;
+  justify-content: space-evenly;
+}
+.background .skills li,
+.about .skills li {
+  font-size: 1.75rem;
+  line-height: 45px;
 }

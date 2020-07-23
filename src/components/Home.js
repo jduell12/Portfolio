@@ -5,7 +5,7 @@ import profile from '../imgs/profile.jpg';
 
 const Home = () => {
     return (
-        <div className="background">
+        <div className="background home">
             <h1 className="homeTitle">Jessica Duell</h1>
             <img src={profile}  alt="profile"/>
             <h2 className="homeTitle">Full Stack Web Developer</h2>
