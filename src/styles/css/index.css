@@ -256,6 +256,24 @@ nav {
 }
 .background .skills li,
 .about .skills li {
+  width: 100%;
   font-size: 1.75rem;
   line-height: 45px;
+}
+.background .skills li img,
+.about .skills li img {
+  border-radius: 0;
+  width: 15%;
+}
+.background .skills .front > ul,
+.about .skills .front > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.background .skills .front > ul li,
+.about .skills .front > ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

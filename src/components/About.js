@@ -1,5 +1,11 @@
 import React from 'react';
 
+//icons
+import git from '../imgs/front/gitLogo.png';
+import html from '../imgs/front/HTML5_Logo_64.png';
+import css from '../imgs/front/CSS3Logo.png';
+import bootstrap from '../imgs/front/react-bootstrap.png';
+
 const About = () => {
     return(
         <div className="background about">
@@ -10,10 +16,10 @@ const About = () => {
                 <div className="front">
                     <h3>Front End</h3>
                     <ul>
-                        <li>Git</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>BootStrap</li>
+                        <li> <img src={git} alt='git'/>Git</li>
+                        <li><img src={html} alt='html'/>HTML</li>
+                        <li><img src={css} alt='css' />CSS</li>
+                        <li><img src={bootstrap} alt='bootstrap' />BootStrap</li>
                         <li>ReactStrap</li>
                         <li>Styled Components</li>
                         <li>JavaScript</li>
@@ -25,9 +31,10 @@ const About = () => {
                 <div className="back">
                     <h3>Back End</h3>
                     <ul>
+                        <li>Python</li>
                         <li>Node JS</li>
                         <li>C++</li>
-                        <li>Python</li>
+                        <li>C</li>
                     </ul>
                 </div>
                 <div className="test">
