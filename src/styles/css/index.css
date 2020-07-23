@@ -181,6 +181,7 @@ nav {
   padding: 3%;
   background: rgba(27, 31, 34, 0.85);
   color: #FFFFFF;
+  border-radius: 1%;
 }
 .home img {
   border-radius: 50%;
