@@ -6,7 +6,7 @@ import {NavBarContext} from './contexts/NavBarContext'
 
 //components
 import {
-  Home, NavBar, Contact, Portfolio, Resume
+  Home, NavBar, Contact, Portfolio, About
 } from './components'
 
 
@@ -19,8 +19,8 @@ function App() {
       <NavBarContext.Provider value={{onPage, setPage}}>
         <NavBar />
       </NavBarContext.Provider>
+      <Route exact path = "/About" component={About} />
       <Route exact path = "/Portfolio" component={Portfolio} />
-      <Route exact path = "/Resume" component={Resume} />
       <Route exact path = "/Contact" component={Contact} />
       <Route exact path = "/" component={Home} />
     </div>

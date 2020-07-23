@@ -135,6 +135,11 @@ table {
 }
 html {
   font-size: 62.5%;
+  background: url('../../imgs/ireland.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 html,
 body {
@@ -168,5 +173,28 @@ nav {
   align-items: center;
 }
 .on {
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 1.9rem;
+}
+.home {
+  margin: 3% 10%;
+  padding: 3%;
+  background: rgba(27, 31, 34, 0.85);
+  color: #FFFFFF;
+}
+.home img {
+  border-radius: 50%;
+  width: 25%;
+  padding: 1%;
+  margin: 1.5%;
+}
+.home h1,
+.home h2 {
+  font-family: cursive;
+}
+.home p {
+  margin: 3%;
+  font-family: 'Rowdies', cursive;
+  letter-spacing: 2px;
+  font-size: 1.75rem;
 }
