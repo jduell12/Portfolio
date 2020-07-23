@@ -14,6 +14,8 @@ const Portfolio = () => {
                         <p>A web application using React to deliver personalized recommendations for each user</p>
                     </a>
                 </div>
+
+                {/*For future projects */}
             </div>
         </div>
     )

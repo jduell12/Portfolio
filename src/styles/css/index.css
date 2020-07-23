@@ -209,6 +209,12 @@ nav {
 .port p {
   font-family: sans-serif;
 }
+.background .projects,
+.port .projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .background .projects .medCab,
 .port .projects .medCab {
   border-radius: 1%;
