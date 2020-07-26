@@ -289,6 +289,35 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.contact .email,
+.contact .github,
+.contact .linkedin,
+.contact .twitter {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+.contact .email a,
+.contact .github a,
+.contact .linkedin a,
+.contact .twitter a {
+  color: white;
+  margin-left: 1%;
+  text-decoration: underline;
+}
+.contact .github > h2,
+.contact .github > a {
+  color: #6cc644;
+}
+.contact .linkedin > h2,
+.contact .linkedin > a {
+  color: #00a0dc;
+}
+.contact .twitter > h2,
+.contact .twitter > a {
+  color: #1da1f2;
+}
 #footer img {
   width: 5%;
   margin: 0 3%;
