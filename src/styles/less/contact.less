@@ -10,7 +10,30 @@
             margin-left: 1%;
             text-decoration: underline;
         }
-    }
+
+        @media @tablet{
+            flex-direction: column;
+        }// end tablet
+
+        @media @small-tablet{
+            h2{
+                font-size: 2.5rem;
+            }
+        }//end small-tablet
+
+        @media @large-phone{
+            h2{
+                font-size: 2rem;
+            }
+        }// end large-phone
+
+        @media @med-phone{
+            h2{
+                font-size: 2rem;
+            }
+            margin: 30% 0;
+        } //end med-phone 
+    }// end .github, .linkedin, .email, .twitter
 
     .github > h2, .github > a{
         color: #6cc644;
@@ -18,9 +41,12 @@
 
     .linkedin > h2, .linkedin > a{
         color: #00a0dc;
+        @media @med-phone{
+            visibility: hidden;
+        }
     }
 
     .twitter > h2, .twitter > a{
         color: #1da1f2;
     }
-}
+}//end .contact

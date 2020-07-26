@@ -173,6 +173,16 @@ a {
   color: #FFFFFF;
   border-radius: 1%;
 }
+@media (max-width: 520px) {
+  .background {
+    height: 1000px;
+  }
+}
+@media (max-width: 390px) {
+  .background {
+    height: 1900px;
+  }
+}
 nav {
   margin: 1% 0;
   display: flex;
@@ -199,9 +209,22 @@ nav {
   padding: 1%;
   margin: 1.5%;
 }
+@media (max-width: 520px) {
+  .background img,
+  .home img {
+    width: 80%;
+    margin: 15% 0;
+  }
+}
 .background .homeTitle,
 .home .homeTitle {
   font-family: cursive;
+}
+@media (max-width: 520px) {
+  .background .homeTitle,
+  .home .homeTitle {
+    margin: 5% 0;
+  }
 }
 .background p,
 .home p {
@@ -209,6 +232,12 @@ nav {
   font-family: 'Rowdies', cursive;
   letter-spacing: 2px;
   font-size: 1.75rem;
+}
+@media (max-width: 520px) {
+  .background p,
+  .home p {
+    margin: 15% 0;
+  }
 }
 .background p,
 .port p {
@@ -232,6 +261,12 @@ nav {
   width: 70%;
   opacity: 90%;
 }
+@media (max-width: 911px) {
+  .background .projects .medCab img,
+  .port .projects .medCab img {
+    width: 80%;
+  }
+}
 .background .projects .medCab p,
 .port .projects .medCab p {
   color: #ffffff;
@@ -243,6 +278,12 @@ nav {
   margin: 2% 0;
   padding: 2%;
   border-top: 1px lightgrey dashed;
+}
+@media (max-width: 390px) {
+  .background .skillTitle,
+  .about .skillTitle {
+    padding: 5% 0;
+  }
 }
 .background .aboutP,
 .about .aboutP {
@@ -260,6 +301,12 @@ nav {
   font-size: 1.75rem;
   line-height: 45px;
 }
+@media (max-width: 390px) {
+  .background .skills li,
+  .about .skills li {
+    height: 80px;
+  }
+}
 .background .skills li img,
 .about .skills li img {
   border-radius: 0;
@@ -268,6 +315,13 @@ nav {
 .background .skills .front,
 .about .skills .front {
   width: 33%;
+}
+@media (max-width: 390px) {
+  .background .skills .front,
+  .about .skills .front {
+    width: initial;
+    border-bottom: 1px white dashed;
+  }
 }
 .background .skills .front > ul,
 .about .skills .front > ul,
@@ -289,6 +343,25 @@ nav {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 390px) {
+  .background .skills .back,
+  .about .skills .back {
+    padding-top: 5%;
+    border-bottom: 1px white dashed;
+  }
+}
+@media (max-width: 390px) {
+  .background .skills .test,
+  .about .skills .test {
+    padding-top: 5%;
+  }
+}
+@media (max-width: 390px) {
+  .background .skills,
+  .about .skills {
+    display: block;
+  }
+}
 .contact .email,
 .contact .github,
 .contact .linkedin,
@@ -306,6 +379,44 @@ nav {
   margin-left: 1%;
   text-decoration: underline;
 }
+@media (max-width: 911px) {
+  .contact .email,
+  .contact .github,
+  .contact .linkedin,
+  .contact .twitter {
+    flex-direction: column;
+  }
+}
+@media (max-width: 825px) {
+  .contact .email h2,
+  .contact .github h2,
+  .contact .linkedin h2,
+  .contact .twitter h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 646px) {
+  .contact .email h2,
+  .contact .github h2,
+  .contact .linkedin h2,
+  .contact .twitter h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 520px) {
+  .contact .email,
+  .contact .github,
+  .contact .linkedin,
+  .contact .twitter {
+    margin: 30% 0;
+  }
+  .contact .email h2,
+  .contact .github h2,
+  .contact .linkedin h2,
+  .contact .twitter h2 {
+    font-size: 2rem;
+  }
+}
 .contact .github > h2,
 .contact .github > a {
   color: #6cc644;
@@ -313,6 +424,12 @@ nav {
 .contact .linkedin > h2,
 .contact .linkedin > a {
   color: #00a0dc;
+}
+@media (max-width: 520px) {
+  .contact .linkedin > h2,
+  .contact .linkedin > a {
+    visibility: hidden;
+  }
 }
 .contact .twitter > h2,
 .contact .twitter > a {
@@ -326,4 +443,9 @@ nav {
 }
 #footer img > .twitter {
   background: none;
+}
+@media (max-width: 390px) {
+  #footer {
+    display: none;
+  }
 }
