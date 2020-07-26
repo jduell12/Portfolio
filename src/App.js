@@ -6,7 +6,7 @@ import {NavBarContext} from './contexts/NavBarContext'
 
 //components
 import {
-  Home, NavBar, Contact, Portfolio, About
+  Home, NavBar, Contact, Portfolio, About, Footer
 } from './components'
 
 
@@ -23,6 +23,7 @@ function App() {
       <Route exact path = "/Portfolio" component={Portfolio} />
       <Route exact path = "/Contact" component={Contact} />
       <Route exact path = "/" component={Home} />
+      <Footer />
     </div>
   );
 }
