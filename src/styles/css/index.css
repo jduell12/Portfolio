@@ -265,14 +265,26 @@ nav {
   border-radius: 0;
   width: 15%;
 }
+.background .skills .front,
+.about .skills .front {
+  width: 33%;
+}
 .background .skills .front > ul,
-.about .skills .front > ul {
+.about .skills .front > ul,
+.background .skills .back > ul,
+.about .skills .back > ul,
+.background .skills .test > ul,
+.about .skills .test > ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .background .skills .front > ul li,
-.about .skills .front > ul li {
+.about .skills .front > ul li,
+.background .skills .back > ul li,
+.about .skills .back > ul li,
+.background .skills .test > ul li,
+.about .skills .test > ul li {
   display: flex;
   justify-content: center;
   align-items: center;
