@@ -1,7 +1,5 @@
 import React from "react";
 
-import medLogo from "../imgs/medCabinetLogo.png";
-
 const Portfolio = () => {
   return (
     <div className="background port">
