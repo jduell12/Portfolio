@@ -9,7 +9,7 @@ const Portfolio = () => {
       <div class="projects">
         <div className="medCab">
           <a href="https://med-cabinet-2.netlify.app/index.html" target="blank">
-            <img src={medLogo} alt="logo" />
+            <h2>Med Cabinet</h2>
             <p>
               A web application using React to deliver personalized
               recommendations for each user
