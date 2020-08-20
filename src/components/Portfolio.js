@@ -1,6 +1,6 @@
 import React from "react";
 
-import medLogo from "../imgs/medCabinetLogo.png";
+import medLogo from "../imgs/ireland.jpeg";
 
 const Portfolio = () => {
   return (
