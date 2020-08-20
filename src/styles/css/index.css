@@ -259,7 +259,7 @@ nav {
 .port .projects .medCab img {
   border-radius: 70%;
   width: 70%;
-  opacity: 90%;
+/*   opacity: 90%; */
 }
 @media (max-width: 911px) {
   .background .projects .medCab img,
