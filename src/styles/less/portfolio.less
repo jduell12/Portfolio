@@ -1,33 +1,83 @@
-.background, .port{
-    p{
-        font-family: sans-serif;
+.background,
+.port {
+  p {
+    font-family: sans-serif;
+  }
+
+  .projects {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+
+    .first {
+      display: flex;
+
+      .humanRightsFirst {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 3% 1%;
+
+        #hrf-logo {
+          border-radius: 0;
+          width: 60%;
+        }
+
+        a {
+          color: white;
+        }
+      }
+
+      .betterProf {
+        margin: 3% 1%;
+        width: 50%;
+
+        img {
+          width: 40%;
+          border-radius: 10%;
+        }
+      }
     }
 
-    .projects{
+    .second {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        .medCab{
-            border-radius: 1%;
+
+        .plants{
             margin: 3% 1%;
             width: 50%;
 
             img{
-                border-radius: 70%;
-                width: 70%;
-                opacity: 90%;
-
-                @media @tablet{
-                    width: 80%;
-                }
-            }
-
-            p{
-                color: #ffffff;
-                line-height: 150%;
-                text-align: center;
+                width: 50%;
+                border-radius: 20%;
             }
         }
+      .medCab {
+        border-radius: 1%;
+        margin: 3% 1%;
+        width: 50%;
+
+        img {
+          border-radius: 70%;
+          width: 60%;
+          opacity: 90%;
+
+          @media @tablet {
+            width: 80%;
+          }
+        }
+
+        a {
+          color: white;
+        }
+
+        p {
+          color: #ffffff;
+          line-height: 150%;
+          text-align: center;
+        }
+      }
     }
+  }
 }
