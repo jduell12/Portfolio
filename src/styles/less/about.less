@@ -1,74 +1,15 @@
-.background, .about{
-    .skillTitle{
-        margin: 2% 0;
-        padding: 2%;
-        border-top: 1px lightgrey dashed;
-
-        @media @phone{
-            padding: 5% 0;
-        }
+#about{
+    margin-top: 10%;
+    color: white;
+    img{
+        border-radius: 50%;
+        width: 25%;
     }
 
     .aboutP{
-        text-align: justify;
-        margin: 5%;
+        width: 50%;
+        margin: 1% 25%;
+        line-height: 150%;
+        font-size: 1.75rem;
     }
-
-    .skills{
-        display: flex;
-        justify-content: space-evenly;
-
-        li{
-            width: 100%;
-            font-size: 1.75rem;
-            line-height: 45px;
-
-            @media @phone{
-                height: 80px;
-            }
-
-            img{
-                border-radius: 0;
-                width: 15%;
-            }
-        }
-
-        .front{
-
-            @media @phone{
-                width: initial;
-                border-bottom: 1px white dashed;
-            }
-        }
-
-        .front > ul, .back > ul, .test > ul{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            li{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-            }
-        }
-
-        .back{
-            @media @phone{
-                padding-top: 5%;
-                border-bottom: 1px white dashed;
-            }
-        }
-
-        .test{
-            @media @phone{
-                padding-top: 5%;
-            }
-        }
-
-        @media @phone{
-            display: block;
-        }
-    }//end of .skills
 }

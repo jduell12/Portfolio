@@ -1,10 +1,49 @@
-//navigation bar styles
-nav{
-    margin: 1% 0;
-    .flex(@justify: space-evenly);
-}
+//navigation bar styles#
+#nav{
+    .navbar{
+        .navbar-nav{
+            .flex(@justify: space-evenly);
+            flex-direction: row;
+            .nav-item{
+                margin-left: 15%;
+            }
+        }//end of navbar-nav
+    }//end of navbar
+    .switch-checkbox{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    .switch-label{
+        .flex(@justify:space-between);
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        background: grey;
+        border-radius: 100%;
+        position: relative;
+        transition: background-color .2s;
+    }
 
-.on{
-    font-weight: bolder;
-    font-size: 1.9rem;
-}
+    .switch-label .switch-button{
+        content:'';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        transition: 0.2s;
+        background: #FFF;
+        box-shadow: 0 0 2px 0 rgba(10 10, 10, 0.29);
+    }
+
+    .switch-checkbox:checked + .switch-label .switch-button{
+        left: calc(100% - 2px);
+        transform: translateX(-100%)
+    }
+
+    .switch-label:active .switch-button{
+        width: 60px;
+    }
+}//end nav

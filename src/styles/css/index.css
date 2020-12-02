@@ -135,11 +135,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  background: url('../../imgs/ireland.jpeg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: black;
 }
 html,
 body {
@@ -166,32 +162,50 @@ a {
   text-decoration: none;
   color: white;
 }
-.background {
-  margin: 3% 10%;
-  padding: 3%;
-  background: rgba(27, 31, 34, 0.85);
-  color: #FFFFFF;
-  border-radius: 1%;
-}
-@media (max-width: 520px) {
-  .background {
-    height: 1000px;
-  }
-}
-@media (max-width: 390px) {
-  .background {
-    height: 1900px;
-  }
-}
-nav {
-  margin: 1% 0;
+#nav .navbar .navbar-nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
 }
-.on {
-  font-weight: bolder;
-  font-size: 1.9rem;
+#nav .navbar .navbar-nav .nav-item {
+  margin-left: 15%;
+}
+#nav .switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+#nav .switch-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background: grey;
+  border-radius: 100%;
+  position: relative;
+  transition: background-color 0.2s;
+}
+#nav .switch-label .switch-button {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #FFF;
+  box-shadow: 0 0 2px 0 rgba(10 10, 10, 0.29);
+}
+#nav .switch-checkbox:checked + .switch-label .switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+#nav .switch-label:active .switch-button {
+  width: 60px;
 }
 .background,
 .home {
@@ -216,10 +230,6 @@ nav {
     margin: 15% 0;
   }
 }
-.background .homeTitle,
-.home .homeTitle {
-  font-family: cursive;
-}
 @media (max-width: 520px) {
   .background .homeTitle,
   .home .homeTitle {
@@ -229,7 +239,6 @@ nav {
 .background p,
 .home p {
   margin: 3%;
-  font-family: 'Rowdies', cursive;
   letter-spacing: 2px;
   font-size: 1.75rem;
 }
@@ -323,90 +332,19 @@ nav {
   line-height: 150%;
   text-align: center;
 }
-.background .skillTitle,
-.about .skillTitle {
-  margin: 2% 0;
-  padding: 2%;
-  border-top: 1px lightgrey dashed;
+#about {
+  margin-top: 10%;
+  color: white;
 }
-@media (max-width: 390px) {
-  .background .skillTitle,
-  .about .skillTitle {
-    padding: 5% 0;
-  }
+#about img {
+  border-radius: 50%;
+  width: 25%;
 }
-.background .aboutP,
-.about .aboutP {
-  text-align: justify;
-  margin: 5%;
-}
-.background .skills,
-.about .skills {
-  display: flex;
-  justify-content: space-evenly;
-}
-.background .skills li,
-.about .skills li {
-  width: 100%;
+#about .aboutP {
+  width: 50%;
+  margin: 1% 25%;
+  line-height: 150%;
   font-size: 1.75rem;
-  line-height: 45px;
-}
-@media (max-width: 390px) {
-  .background .skills li,
-  .about .skills li {
-    height: 80px;
-  }
-}
-.background .skills li img,
-.about .skills li img {
-  border-radius: 0;
-  width: 15%;
-}
-@media (max-width: 390px) {
-  .background .skills .front,
-  .about .skills .front {
-    width: initial;
-    border-bottom: 1px white dashed;
-  }
-}
-.background .skills .front > ul,
-.about .skills .front > ul,
-.background .skills .back > ul,
-.about .skills .back > ul,
-.background .skills .test > ul,
-.about .skills .test > ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.background .skills .front > ul li,
-.about .skills .front > ul li,
-.background .skills .back > ul li,
-.about .skills .back > ul li,
-.background .skills .test > ul li,
-.about .skills .test > ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 390px) {
-  .background .skills .back,
-  .about .skills .back {
-    padding-top: 5%;
-    border-bottom: 1px white dashed;
-  }
-}
-@media (max-width: 390px) {
-  .background .skills .test,
-  .about .skills .test {
-    padding-top: 5%;
-  }
-}
-@media (max-width: 390px) {
-  .background .skills,
-  .about .skills {
-    display: block;
-  }
 }
 .contact .email,
 .contact .github,

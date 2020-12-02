@@ -1,13 +1,12 @@
 import React from "react";
 
-import logo from "../imgs/medCabinetLogo.png";
 import hrf from "../imgs/human-rights-first-twitter.png";
 import prof from "../imgs/betterProf.png";
 import plants from "../imgs/plants.png";
 
 const Portfolio = () => {
   return (
-    <div className="background port">
+    <div id="portfolio" className="background port">
       <h1>Projects</h1>
       <div class="projects">
         <div className="first">
@@ -77,19 +76,6 @@ const Portfolio = () => {
             <a href="https://water-my-plants-backend-node.herokuapp.com/">
               Backend Deployment
             </a>
-          </div>
-          <div className="medCab">
-            <h2>Med Cabinet</h2>
-            <a
-              href="https://med-cabinet-2.netlify.app/index.html"
-              target="blank"
-            >
-              <img src={logo} alt="logo for med cabinet" />
-            </a>
-            <p>
-              A web application using React to deliver personalized
-              recommendations for each user
-            </p>
           </div>
         </div>
       </div>

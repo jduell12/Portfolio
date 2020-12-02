@@ -1,29 +1,15 @@
-import React, {useState} from 'react';
-import {Route} from 'react-router-dom';
-
-//context
-import {NavBarContext} from './contexts/NavBarContext'
+import React from "react";
 
 //components
-import {
-  Home, NavBar, Contact, Portfolio, About, Footer
-} from './components'
-
+import { NavBar, Portfolio, About } from "./components";
 
 function App() {
-
-  const [onPage, setPage] = useState('home');
-
   return (
     <div className="App">
-      <NavBarContext.Provider value={{onPage, setPage}}>
-        <NavBar />
-      </NavBarContext.Provider>
-      <Route exact path = "/About" component={About} />
-      <Route exact path = "/Portfolio" component={Portfolio} />
-      <Route exact path = "/Contact" component={Contact} />
-      <Route exact path = "/" component={Home} />
-      <Footer />
+      <NavBar />
+      <h1>Under Construction</h1>
+      {/* <About />
+      <Portfolio /> */}
     </div>
   );
 }

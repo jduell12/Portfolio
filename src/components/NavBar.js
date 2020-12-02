@@ -1,20 +1,23 @@
-import React, {useContext} from 'react';
-import {Link} from 'react-router-dom';
-
-//contexts
-import {NavBarContext} from '../contexts/NavBarContext'
+import React from "react";
+import { Nav, NavItem, NavLink, Navbar } from "reactstrap";
+import Switch from "./Switch";
 
 const NavBar = () => {
-
-   const {onPage, setPage} = useContext(NavBarContext);
-    return (
-        <nav>
-            <Link onClick={() => {setPage('home')}} className={onPage === 'home' ? 'on' : ''} to="/">Home</Link> 
-            <Link onClick={() => {setPage('about')}} className={onPage === 'about' ? 'on' : ''} to="/About">About</Link>
-            <Link onClick={() => {setPage('portfolio')}} className={onPage === 'portfolio' ? 'on' : ''} to="/Portfolio">Portfolio</Link>
-            <Link onClick={() => {setPage('contact')}}  className={onPage === 'contact' ? 'on' : ''} to="/Contact">Contact</Link>
-        </nav>
-    )
-}
+  return (
+    <div id="nav">
+      <Navbar color="dark" dark>
+        <Nav navbar>
+          <NavItem>
+            <NavLink href="#about">About</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#portfolio">Portfolio</NavLink>
+          </NavItem>
+        </Nav>
+        <Switch />
+      </Navbar>
+    </div>
+  );
+};
 
 export default NavBar;
