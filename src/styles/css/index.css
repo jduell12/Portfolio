@@ -171,41 +171,34 @@ a {
 #nav .navbar .navbar-nav .nav-item {
   margin-left: 15%;
 }
-#nav .switch-checkbox {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-#nav .switch-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  width: 100px;
-  height: 50px;
-  background: grey;
-  border-radius: 100%;
-  position: relative;
-  transition: background-color 0.2s;
-}
-#nav .switch-label .switch-button {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
+#nav #switch-dark,
+#nav #switch-light {
+  display: inline-block;
   width: 45px;
-  height: 45px;
-  border-radius: 45px;
-  transition: 0.2s;
-  background: #FFF;
-  box-shadow: 0 0 2px 0 rgba(10 10, 10, 0.29);
+  height: 25px;
+  border: none;
+  border-radius: 19px;
+  z-index: 99;
+  box-shadow: 0 10px 28px #000000;
+  cursor: pointer;
 }
-#nav .switch-checkbox:checked + .switch-label .switch-button {
-  left: calc(100% - 2px);
-  transform: translateX(-100%);
+#nav #switch-dark {
+  background: #F8F8F9;
 }
-#nav .switch-label:active .switch-button {
-  width: 60px;
+#nav #switch-light {
+  background: #000;
+}
+#nav .circleLeft,
+#nav .circleRight {
+  position: absolute;
+  cursor: pointer;
+  height: 20px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background: white;
+  transition: 0.5s;
+  border-radius: 100%;
 }
 .background,
 .home {

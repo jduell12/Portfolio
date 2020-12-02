@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Switch = () => {
+const Switch = ({ handleClick }) => {
+  const [darkTheme, changeDarkTheme] = useState(true);
+
+  const toggle = () => {
+    changeDarkTheme(!darkTheme);
+    // handleClick();
+  };
   return (
-    <>
-      <input id="switch" className="switch-checkbox" type="checkbox" />
-      <label className="switch-label" htmlFor="switch">
-        <span className="switch-button" />
-      </label>
-    </>
+    <button id={darkTheme ? "switch-dark" : "switch-light"} onClick={toggle}>
+      <span className={darkTheme === "dark" ? "circleLeft" : "circleRight"} />
+    </button>
   );
 };
 
