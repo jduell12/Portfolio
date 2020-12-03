@@ -14,7 +14,7 @@ const NavBar = () => {
             <NavLink href="#portfolio">Portfolio</NavLink>
           </NavItem>
         </Nav>
-        <Switch />
+        {/* <Switch /> */}
       </Navbar>
     </div>
   );

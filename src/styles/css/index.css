@@ -160,7 +160,7 @@ p {
 a {
   font-size: 1.6rem;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 #nav .navbar .navbar-nav {
   display: flex;
