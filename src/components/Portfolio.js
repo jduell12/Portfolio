@@ -8,7 +8,7 @@ import plants from "../imgs/plants.png";
 const Portfolio = () => {
   return (
     <div id="portfolio">
-      <h1>Projects</h1>
+      <h1 id="projects">Projects</h1>
       <div className="project">
         <NavLink href="/humanrights">
           <Button className="hrf">Human Rights First</Button>
@@ -29,16 +29,6 @@ const Portfolio = () => {
           <Button className="githubPort">Portfolio on Github</Button>
         </NavLink>
       </div>
-      {/* <div class="projects">
-        <div className="first">
-          <div className="humanRightsFirst">
-            <a href="https://main.d2v2y4y91pkwd.amplifyapp.com/" target="blank">
-              <h2>Human Rights Considered</h2>
-            </a>
-            <a href="https://main.d2v2y4y91pkwd.amplifyapp.com/" target="blank">
-              <img id="hrf-logo" src={hrf} alt="Human Rights First" />
-            </a>
-          </div> */}
 
       {/* <div className="betterProf">
             <a href="https://backend-build-week.vercel.app/" target="blank">

@@ -1,6 +1,17 @@
 import React from "react";
 
 const HumanRights = () => {
+  /* <div class="projects">
+        <div className="first">
+          <div className="humanRightsFirst">
+            <a href="https://main.d2v2y4y91pkwd.amplifyapp.com/" target="blank">
+              <h2>Human Rights Considered</h2>
+            </a>
+            <a href="https://main.d2v2y4y91pkwd.amplifyapp.com/" target="blank">
+              <img id="hrf-logo" src={hrf} alt="Human Rights First" />
+            </a>
+          </div> */
+
   return (
     <div>
       <p>

@@ -19,7 +19,7 @@ const NavBar = ({ project }) => {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/#portfolio" className="portfolio">
+                <NavLink href="/#projects" className="portfolio">
                   Portfolio
                 </NavLink>
               </NavItem>
