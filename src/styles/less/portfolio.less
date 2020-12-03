@@ -1,83 +1,47 @@
-.background,
-.port {
-  p {
-    font-family: sans-serif;
+#portfolio{
+  background: black;
+  color: white;
+  padding-top: 50%;
+  padding-bottom: 10%;
+
+  h1{
+    padding-bottom: 3%;
   }
 
-  .projects {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3%;
-
-    .first {
+  .project{
+    .nav-link{
+      width: 100%;
+      margin: 0;
+      padding: 0;
       display: flex;
+      .btn{
+        width: 70%;
+        font-size: 4rem;
+        height: 200px;
+        border:none;
+      }//end .bth
+    }//end .nav-link
+  }//end .project
 
-      .humanRightsFirst {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        margin: 3% 1%;
+  .second{
+    justify-content: flex-end;
+  }//end .second
 
-        #hrf-logo {
-          border-radius: 0;
-          width: 60%;
-        }
+  .hrf{
+    background: #52B3B0;
+  }//end .hrf
 
-        a {
-          color: white;
-        }
-      }
+  .betterProf{
 
-      .betterProf {
-        margin: 3% 1%;
-        width: 50%;
+  }//end .betterProf
 
-        img {
-          width: 40%;
-          border-radius: 10%;
-        }
-      }
-    }
+  .plants{
+    background: #8C7088;
+  }//end .plants
 
-    .second {
-        display: flex;
+  .githubPort{
+    background:#073B4C;
+  }//end .githubPort
 
-        .plants{
-            margin: 3% 1%;
-            width: 50%;
-
-            img{
-                width: 50%;
-                border-radius: 20%;
-            }
-        }
-      .medCab {
-        border-radius: 1%;
-        margin: 3% 1%;
-        width: 50%;
-
-        img {
-          border-radius: 70%;
-          width: 60%;
-          opacity: 90%;
-
-          @media @tablet {
-            width: 80%;
-          }
-        }
-
-        a {
-          color: white;
-        }
-
-        p {
-          color: #ffffff;
-          line-height: 150%;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
+  
+} // end of #portfolio

@@ -8,12 +8,12 @@ const NavBar = () => {
       <Navbar color="dark" dark>
         <Nav navbar>
           <NavItem>
-            <NavLink href="#about" className="about">
+            <NavLink href="/#about" className="about">
               About
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#portfolio" className="portfolio">
+            <NavLink href="/#portfolio" className="portfolio">
               Portfolio
             </NavLink>
           </NavItem>

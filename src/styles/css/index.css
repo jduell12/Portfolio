@@ -241,92 +241,41 @@ a {
     margin: 15% 0;
   }
 }
-.background p,
-.port p {
-  font-family: sans-serif;
-}
-.background .projects,
-.port .projects {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 3%;
-}
-.background .projects .first,
-.port .projects .first {
-  display: flex;
-}
-.background .projects .first .humanRightsFirst,
-.port .projects .first .humanRightsFirst {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin: 3% 1%;
-}
-.background .projects .first .humanRightsFirst #hrf-logo,
-.port .projects .first .humanRightsFirst #hrf-logo {
-  border-radius: 0;
-  width: 60%;
-}
-.background .projects .first .humanRightsFirst a,
-.port .projects .first .humanRightsFirst a {
+#portfolio {
+  background: black;
   color: white;
+  padding-top: 50%;
+  padding-bottom: 10%;
 }
-.background .projects .first .betterProf,
-.port .projects .first .betterProf {
-  margin: 3% 1%;
-  width: 50%;
+#portfolio h1 {
+  padding-bottom: 3%;
 }
-.background .projects .first .betterProf img,
-.port .projects .first .betterProf img {
-  width: 40%;
-  border-radius: 10%;
-}
-.background .projects .second,
-.port .projects .second {
+#portfolio .project .nav-link {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
-.background .projects .second .plants,
-.port .projects .second .plants {
-  margin: 3% 1%;
-  width: 50%;
+#portfolio .project .nav-link .btn {
+  width: 70%;
+  font-size: 4rem;
+  height: 200px;
+  border: none;
 }
-.background .projects .second .plants img,
-.port .projects .second .plants img {
-  width: 50%;
-  border-radius: 20%;
+#portfolio .second {
+  justify-content: flex-end;
 }
-.background .projects .second .medCab,
-.port .projects .second .medCab {
-  border-radius: 1%;
-  margin: 3% 1%;
-  width: 50%;
+#portfolio .hrf {
+  background: #52B3B0;
 }
-.background .projects .second .medCab img,
-.port .projects .second .medCab img {
-  border-radius: 70%;
-  width: 60%;
-  opacity: 90%;
+#portfolio .plants {
+  background: #8C7088;
 }
-@media (max-width: 911px) {
-  .background .projects .second .medCab img,
-  .port .projects .second .medCab img {
-    width: 80%;
-  }
-}
-.background .projects .second .medCab a,
-.port .projects .second .medCab a {
-  color: white;
-}
-.background .projects .second .medCab p,
-.port .projects .second .medCab p {
-  color: #ffffff;
-  line-height: 150%;
-  text-align: center;
+#portfolio .githubPort {
+  background: #073B4C;
 }
 #about {
-  padding-top: 5%;
+  padding-top: 35%;
   color: white;
   background: black;
 }
