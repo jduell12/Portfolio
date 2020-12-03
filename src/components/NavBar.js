@@ -8,10 +8,14 @@ const NavBar = () => {
       <Navbar color="dark" dark>
         <Nav navbar>
           <NavItem>
-            <NavLink href="#about">About</NavLink>
+            <NavLink href="#about" className="about">
+              About
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#portfolio">Portfolio</NavLink>
+            <NavLink href="#portfolio" className="portfolio">
+              Portfolio
+            </NavLink>
           </NavItem>
         </Nav>
         {/* <Switch /> */}

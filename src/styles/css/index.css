@@ -326,14 +326,18 @@ a {
   text-align: center;
 }
 #about {
-  margin-top: 10%;
+  padding-top: 5%;
   color: white;
+  background: black;
 }
-#about img {
+#about .card {
+  background: black;
+}
+#about .card img {
   border-radius: 50%;
   width: 25%;
 }
-#about .aboutP {
+#about .card .aboutP {
   width: 50%;
   margin: 1% 25%;
   line-height: 150%;

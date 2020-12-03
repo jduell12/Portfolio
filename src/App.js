@@ -15,8 +15,8 @@ function App() {
       <a href="https://www.linkedin.com/in/jessicaduell/">
         <h3>LinkedIn</h3>
       </a>
-      {/* <About />
-      <Portfolio /> */}
+      <About />
+      {/* <Portfolio /> */}
     </div>
   );
 }
