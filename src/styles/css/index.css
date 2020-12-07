@@ -274,6 +274,37 @@ a {
 #portfolio .githubPort {
   background: #073B4C;
 }
+div {
+  background: black;
+}
+div .hrf-top {
+  padding: 10% 10% 3% 10%;
+}
+div .hrf-top img {
+  padding-bottom: 3%;
+}
+div .hrf-top .hrf-info {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+div .hrf-top .hrf-info h2 {
+  margin-bottom: 3%;
+}
+div .hrf-top .hrf-info h4 {
+  text-align: left;
+}
+div .hrf-top .hrf-info .btn-secondary {
+  background: #003767;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-size: 2rem;
+  margin: 3% 30% 0 30%;
+}
+div .hrf-home {
+  width: 80%;
+}
 #about {
   padding-top: 25%;
   color: white;

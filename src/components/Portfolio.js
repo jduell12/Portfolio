@@ -1,10 +1,6 @@
 import React from "react";
 import { Button, NavLink } from "reactstrap";
 
-import hrf from "../imgs/human-rights-first-twitter.png";
-import prof from "../imgs/betterProf.png";
-import plants from "../imgs/plants.png";
-
 const Portfolio = () => {
   return (
     <div id="portfolio">
