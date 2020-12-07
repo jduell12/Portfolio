@@ -1,19 +1,17 @@
-div{
+.hrf{
     background: black;
-    .hrf-top{
-        padding: 10% 10% 3% 10%;
+    color:white;
+    padding: 10% 10% 3% 10%;
 
+    .hrf-top{    
         img{
             padding-bottom: 3%;
-        }
+        }//img
 
         .hrf-info{
-            background: black;
-            color:white;
             display: flex;
             flex-direction: column;
             
-
             h2{
                 margin-bottom: 3%;
             }//h2
@@ -27,12 +25,41 @@ div{
                 border: 2px solid transparent;
                 border-radius: 30px;
                 font-size: 2rem;
-                margin: 3% 30% 0 30%;
+                margin: 3% 30%;
             }//.btn-secondary
         }//.hrf-indo
     }//.hrf-top
 
     .hrf-home{
-                width:80%;
+        width:100%;
+        border-radius: 2%;
     }//.hrf-home
-}
+
+    .hrf-tech{
+        padding: 10% 10% 3% 10%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .logos{
+            width: 50%;
+            display: inline-grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            column-gap: 0;
+            grid-template-rows: 25% 25% 25%;
+            row-gap: 3rem;
+
+            img{
+                width: 50%;
+                border-radius: 10%;
+            }//img
+        }//.logos
+
+        .tech{
+            border-left: 2px solid white;
+            width: 50%;
+            margin-left: 1%;
+            padding-left: 1%;
+            
+        }//.tech
+    }//.hrf-tech
+}//.hrf
