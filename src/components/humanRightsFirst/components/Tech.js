@@ -2,12 +2,12 @@ import React from "react";
 
 //images
 import js from "../../../imgs/front/js.png";
-import react from "../../../imgs/front/react.png";
-import redux from "../../../imgs/front/redux.png";
-import amcharts from "../../../imgs/front/amcharts.png";
+import react from "../../../imgs/front/React-Icon.png";
+import redux from "../../../imgs/front/Redux-Icon.png";
+import amcharts from "../../../imgs/front/amchartsTrans.png";
 import aws from "../../../imgs/front/AWS.png";
 import node from "../../../imgs/back/nodeJS.jpg";
-import jest from "../../../imgs/testing/jest.jpeg";
+import jest from "../../../imgs/testing/Jest-Icon.png";
 import postgres from "../../../imgs/back/postgres.png";
 
 const Tech = () => {
@@ -16,15 +16,15 @@ const Tech = () => {
       <div className="logos">
         <span></span>
         <img src={js} alt="JavaScript logo" />
-        <img src={react} alt="React logo" />
+        <img src={postgres} alt="PostgreSQL logo" />
         <span></span>
         <img src={redux} alt="Redux logo" />
-        <img src={amcharts} alt="amCharts logo" />
-        <img src={aws} alt="AWS logo" />
-        <img src={node} alt="Node logo" />
+        <img src={react} alt="React logo" />
+        <img src={amcharts} className="amCharts" alt="amCharts logo" />
+        <img src={aws} className="aws" alt="AWS logo" />
         <span></span>
-        <img src={postgres} alt="PostgreSQL logo" />
         <img src={jest} alt="Jest logo" />
+        <img src={node} alt="Node logo" />
       </div>
       <div className="tech">
         <h3>Tech Stack</h3>

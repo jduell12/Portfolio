@@ -1,9 +1,45 @@
 /*
     Creates a flex container 
-    Default is center as a flex row - can be changed with arguments
+    Paramters: justify, align
 */
 .flex(@justify: center, @align: center){
     display: flex;
     justify-content: @justify;
     align-items: @align;
+}
+
+/*
+    Place items in a circle 
+    Parameters: itemCount, circleSize, itemSize
+*/
+.on-circle(@itemCount, @circleSize, @itemSize){
+    position: relative;
+    width: unit(@circleSize, px);
+    height: unit(@circleSize, px);
+    padding: 0;
+    border-radius: 50%;
+
+    //select all children of mixin
+    > *{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: unit(@itemSize, px);
+        height: unit(@itemSize, px);
+        margin: unit(-(@itemSize / 2), px);
+        
+        @angle: (360 / @itemCount);
+
+        .cl(@i,@r) when (@i > 0) {
+            &:nth-of-type(@{i}) {
+                transform: rotate(@r * 1deg)  translate(unit(@circleSize/2,px)) rotate(@r * -1deg);
+            }
+
+            @rot: @r + @angle;
+            .cl(@i - 1,@rot);
+        }
+
+        .cl(@itemCount,0);
+    }
 }

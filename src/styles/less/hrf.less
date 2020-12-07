@@ -12,6 +12,7 @@
             display: flex;
             flex-direction: column;
             
+            
             h2{
                 margin-bottom: 3%;
             }//h2
@@ -36,22 +37,22 @@
     }//.hrf-home
 
     .hrf-tech{
-        padding: 10% 10% 3% 10%;
+        padding: 10% 0;
         display: flex;
         justify-content: space-evenly;
 
         .logos{
             width: 50%;
             display: inline-grid;
+            justify-items: center;
+            align-items: center;
             grid-template-columns: 25% 25% 25% 25%;
             column-gap: 0;
             grid-template-rows: 25% 25% 25%;
             row-gap: 3rem;
+            
 
-            img{
-                width: 50%;
-                border-radius: 10%;
-            }//img
+            .on-circle(8, 300, 70);
         }//.logos
 
         .tech{

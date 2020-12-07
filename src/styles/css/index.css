@@ -1,6 +1,10 @@
 /*
     Creates a flex container 
-    Default is center as a flex row - can be changed with arguments
+    Paramters: justify, align
+*/
+/*
+    Place items in a circle 
+    Parameters: itemCount, circleSize, itemSize
 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -304,21 +308,57 @@ a {
   border-radius: 2%;
 }
 .hrf .hrf-tech {
-  padding: 10% 10% 3% 10%;
+  padding: 10% 0;
   display: flex;
   justify-content: space-evenly;
 }
 .hrf .hrf-tech .logos {
   width: 50%;
   display: inline-grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 25% 25% 25% 25%;
   column-gap: 0;
   grid-template-rows: 25% 25% 25%;
   row-gap: 3rem;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  border-radius: 50%;
 }
-.hrf .hrf-tech .logos img {
-  width: 50%;
-  border-radius: 10%;
+.hrf .hrf-tech .logos > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin: -35px;
+}
+.hrf .hrf-tech .logos > *:nth-of-type(8) {
+  transform: rotate(0deg) translate(150px) rotate(0deg);
+}
+.hrf .hrf-tech .logos > *:nth-of-type(7) {
+  transform: rotate(45deg) translate(150px) rotate(-45deg);
+}
+.hrf .hrf-tech .logos > *:nth-of-type(6) {
+  transform: rotate(90deg) translate(150px) rotate(-90deg);
+}
+.hrf .hrf-tech .logos > *:nth-of-type(5) {
+  transform: rotate(135deg) translate(150px) rotate(-135deg);
+}
+.hrf .hrf-tech .logos > *:nth-of-type(4) {
+  transform: rotate(180deg) translate(150px) rotate(-180deg);
+}
+.hrf .hrf-tech .logos > *:nth-of-type(3) {
+  transform: rotate(225deg) translate(150px) rotate(-225deg);
+}
+.hrf .hrf-tech .logos > *:nth-of-type(2) {
+  transform: rotate(270deg) translate(150px) rotate(-270deg);
+}
+.hrf .hrf-tech .logos > *:nth-of-type(1) {
+  transform: rotate(315deg) translate(150px) rotate(-315deg);
 }
 .hrf .hrf-tech .tech {
   border-left: 2px solid white;
