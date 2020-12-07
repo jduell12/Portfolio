@@ -5,6 +5,8 @@
 /*
     Place items in a circle 
     Parameters: itemCount, circleSize, itemSize
+
+    Used https://prcode.co.uk/2016/06/28/how-to-put-items-in-a-circle-in-css-less/ as reference
 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -159,7 +161,7 @@ h4 {
   font-size: 2.5rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 a {
   font-size: 1.6rem;
@@ -249,7 +251,6 @@ a {
   background: black;
   color: white;
   padding-top: 50%;
-  padding-bottom: 10%;
 }
 #portfolio h1 {
   padding-bottom: 3%;
@@ -269,7 +270,7 @@ a {
 #portfolio .second {
   justify-content: flex-end;
 }
-#portfolio .hrf {
+#portfolio .hrfBtn {
   background: #52B3B0;
 }
 #portfolio .plants {
@@ -314,13 +315,6 @@ a {
 }
 .hrf .hrf-tech .logos {
   width: 50%;
-  display: inline-grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 25% 25% 25% 25%;
-  column-gap: 0;
-  grid-template-rows: 25% 25% 25%;
-  row-gap: 3rem;
   position: relative;
   width: 300px;
   height: 300px;
@@ -332,9 +326,9 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 70px;
-  height: 70px;
-  margin: -35px;
+  width: 75px;
+  height: 75px;
+  margin: -37.5px;
 }
 .hrf .hrf-tech .logos > *:nth-of-type(8) {
   transform: rotate(0deg) translate(150px) rotate(0deg);
@@ -363,8 +357,20 @@ a {
 .hrf .hrf-tech .tech {
   border-left: 2px solid white;
   width: 50%;
+  height: 300px;
   margin-left: 1%;
-  padding-left: 1%;
+  padding: 3% 0 0 1%;
+}
+.hrf .hrf-tech .tech h3 {
+  margin-bottom: 10%;
+}
+.hrf .hrf-tech .tech p {
+  text-align: left;
+  margin: 0 5%;
+}
+.hrf .screen img {
+  width: 100%;
+  margin-bottom: 3%;
 }
 #about {
   padding-top: 25%;

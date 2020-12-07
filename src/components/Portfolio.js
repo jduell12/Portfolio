@@ -7,7 +7,7 @@ const Portfolio = () => {
       <h1 id="projects">Projects</h1>
       <div className="project">
         <NavLink href="/humanrights">
-          <Button className="hrf">Human Rights First</Button>
+          <Button className="hrfBtn">Human Rights First</Button>
         </NavLink>
       </div>
       <div className="project ">
