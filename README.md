@@ -1,6 +1,6 @@
 # Portfolio 
 
-Website developed with React to showcase projects I have worked on. 
+Website developed with React to showcase projects I have worked on. Project is styled with ReactStrap and Less.
 
 # Running Project Locally
 1. Clone the project <br>
