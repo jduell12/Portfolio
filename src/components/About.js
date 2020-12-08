@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { UncontrolledCollapse, CardBody, Card, Button } from "reactstrap";
 import TypeIt from "typeit-react";
 
@@ -6,8 +6,6 @@ import TypeIt from "typeit-react";
 import profile from "../imgs/profile.jpg";
 
 const About = () => {
-  const [instance, setInstance] = useState(null);
-
   return (
     <div id="about">
       <h1 className="homeTitle">Jessica Duell</h1>

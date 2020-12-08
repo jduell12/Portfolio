@@ -1,6 +1,5 @@
 import React from "react";
 import { Nav, NavItem, NavLink, Navbar } from "reactstrap";
-import Switch from "./Switch";
 
 const NavBar = ({ project }) => {
   return (
