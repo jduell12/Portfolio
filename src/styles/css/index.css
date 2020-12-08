@@ -250,7 +250,7 @@ a {
 #portfolio {
   background: black;
   color: white;
-  padding-top: 50%;
+  padding-top: 25%;
 }
 #portfolio h1 {
   padding-bottom: 3%;
@@ -396,6 +396,9 @@ a {
   background: black;
   border: none;
   color: rgba(255, 255, 255, 0.5);
+}
+#about #type {
+  margin-top: 10%;
 }
 .contact .email,
 .contact .github,
