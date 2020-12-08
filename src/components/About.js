@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { UncontrolledCollapse, CardBody, Card, Button } from "reactstrap";
 import TypeIt from "typeit-react";
+
+//context
+import { AboutContext } from "../context/AboutContext";
 
 //images
 import profile from "../imgs/profile.jpg";
 
 const About = () => {
+  const { aboutOpen } = useContext(AboutContext);
   return (
     <div id="about">
       <h1 className="homeTitle">Jessica Duell</h1>
-      <UncontrolledCollapse toggler=".about">
+      <UncontrolledCollapse toggler="#about" isOpen={aboutOpen}>
         <Card>
           <CardBody>
             <img src={profile} alt="profile" />

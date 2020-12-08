@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Nav, NavItem, NavLink, Navbar } from "reactstrap";
 
+//context
+import { AboutContext } from "../context/AboutContext";
+
 const NavBar = ({ project }) => {
+  const { aboutOpen, setOpen } = useContext(AboutContext);
+
+  const changeOpen = () => {
+    setOpen(!aboutOpen);
+  };
   return (
     <div id="nav">
       <Navbar color="dark" dark>
@@ -13,7 +21,7 @@ const NavBar = ({ project }) => {
           ) : (
             <>
               <NavItem>
-                <NavLink href="/#about" className="about">
+                <NavLink href="/#about" onClick={changeOpen} className="about">
                   About
                 </NavLink>
               </NavItem>
