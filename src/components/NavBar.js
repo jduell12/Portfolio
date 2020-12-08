@@ -25,7 +25,6 @@ const NavBar = ({ project }) => {
             </>
           )}
         </Nav>
-        {/* <Switch /> */}
       </Navbar>
     </div>
   );

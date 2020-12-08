@@ -8,9 +8,9 @@ import thirdPage from "../../../imgs/hrf/piechart.png";
 
 const ScreenShots = () => {
   const imgs = [
-    { src: firstPage, key: "1" },
-    { src: secondPage, key: "2" },
-    { src: thirdPage, key: "3" },
+    { src: firstPage, key: "1", caption: "" },
+    { src: secondPage, key: "2", caption: "" },
+    { src: thirdPage, key: "3", caption: "" },
   ];
 
   return (
