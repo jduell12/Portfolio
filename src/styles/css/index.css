@@ -373,7 +373,7 @@ a {
   margin-bottom: 3%;
 }
 #about {
-  padding-top: 25%;
+  padding-top: 10%;
   color: white;
   background: black;
 }
@@ -389,6 +389,13 @@ a {
   margin: 1% 25%;
   line-height: 150%;
   font-size: 1.75rem;
+}
+#about a .btn,
+#about .btn-secondary {
+  font-size: 2rem;
+  background: black;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
 }
 .contact .email,
 .contact .github,

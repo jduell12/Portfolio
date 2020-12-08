@@ -20,6 +20,25 @@ const About = () => {
           </CardBody>
         </Card>
       </UncontrolledCollapse>
+      <Button href="https://github.com/jduell12" target="blank">
+        Github
+      </Button>
+      <Button href="https://www.linkedin.com/in/jessicaduell/" target="blank">
+        LinkedIn
+      </Button>
+      <Button
+        href="https://drive.google.com/file/d/1zpwh-J13zt3JnSewAVi7AopzGf6bodE5/view"
+        target="blank"
+      >
+        Resume
+      </Button>
+      <Button
+        href={`mailto:duellsoftwaredev@gmail.com?subject=${encodeURIComponent(
+          "Inquiry from Portfolio Site",
+        )}`}
+      >
+        Email
+      </Button>
     </div>
   );
 };
