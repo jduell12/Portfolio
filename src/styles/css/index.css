@@ -275,13 +275,17 @@ a {
   justify-content: flex-end;
 }
 #portfolio .hrfBtn {
-  background: #52B3B0;
+  background: #003767;
+}
+#portfolio .conway {
+  background: #8b045b;
+  opacity: 70%;
 }
 #portfolio .plants {
   background: #8C7088;
 }
 #portfolio .githubPort {
-  background: #073B4C;
+  background: #248232;
 }
 .hrf {
   background: black;

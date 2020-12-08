@@ -15,8 +15,8 @@ const About = () => {
             <img src={profile} alt="profile" />
             <p className="aboutP">
               I'm a Software Engineer located in Apex, NC. I enjoy new projects
-              that challenge me as well as updating older projects to
-              incorporate newer technologies.
+              that challenge me as well as updating older projects by
+              incorporating newer technologies.
             </p>
           </CardBody>
         </Card>
