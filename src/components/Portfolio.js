@@ -12,7 +12,7 @@ const Portfolio = () => {
       </div>
       <div className="project ">
         <NavLink href="/" className="second">
-          <Button className="betterProf second">A Better Professor App</Button>
+          <Button className="betterProf second">Conway's Game of Life</Button>
         </NavLink>
       </div>
       <div className="project">
@@ -21,7 +21,11 @@ const Portfolio = () => {
         </NavLink>
       </div>
       <div className="project ">
-        <NavLink href="/" className="second">
+        <NavLink
+          href="https://github.com/jduell12/Portfolio"
+          target="blank"
+          className="second"
+        >
           <Button className="githubPort">Portfolio on Github</Button>
         </NavLink>
       </div>
