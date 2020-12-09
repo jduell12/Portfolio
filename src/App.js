@@ -13,11 +13,11 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/humanrights">
-          <NavBar project={true} />
-          <HumanRights />
-        </Route>
         <AboutContext.Provider value={{ aboutOpen, setOpen }}>
+          <Route exact path="/humanrights">
+            <NavBar project={true} />
+            <HumanRights />
+          </Route>
           <Route exact path="/">
             <NavBar project={false} />
             <About />

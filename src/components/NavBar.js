@@ -10,6 +10,7 @@ const NavBar = ({ project }) => {
   const changeOpen = () => {
     setOpen(!aboutOpen);
   };
+
   return (
     <div id="nav">
       <Navbar color="dark" dark>
