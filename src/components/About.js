@@ -26,19 +26,29 @@ const About = () => {
           </CardBody>
         </Card>
       </Collapse>
-      <Button href="https://github.com/jduell12" target="blank">
+      <Button
+        className="aboutBtn"
+        href="https://github.com/jduell12"
+        target="blank"
+      >
         Github
       </Button>
-      <Button href="https://www.linkedin.com/in/jessicaduell/" target="blank">
+      <Button
+        className="aboutBtn"
+        href="https://www.linkedin.com/in/jessicaduell/"
+        target="blank"
+      >
         LinkedIn
       </Button>
       <Button
+        className="aboutBtn"
         href="https://drive.google.com/file/d/1zpwh-J13zt3JnSewAVi7AopzGf6bodE5/view"
         target="blank"
       >
         Resume
       </Button>
       <Button
+        className="aboutBtn"
         href={`mailto:duellsoftwaredev@gmail.com?subject=${encodeURIComponent(
           "Inquiry from Portfolio Site",
         )}`}

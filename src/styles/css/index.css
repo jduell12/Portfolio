@@ -278,7 +278,7 @@ a {
   background: #003767;
 }
 #portfolio .conway {
-  background: #8b045b; 
+  background: #8b045b;
 }
 #portfolio .plants {
   background: #8C7088;
@@ -561,12 +561,11 @@ a {
   line-height: 150%;
   font-size: 1.75rem;
 }
-#about a .btn,
-#about .btn-secondary {
+#about .aboutBtn {
   font-size: 2rem;
   background: black;
   border: none;
-  color: rgba(255, 255, 255, 0.5);
+  box-shadow: none;
 }
 #about #type {
   margin-top: 10%;
