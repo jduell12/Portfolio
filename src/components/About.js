@@ -1,19 +1,20 @@
 import React, { useContext } from "react";
-import { UncontrolledCollapse, CardBody, Card, Button } from "reactstrap";
+import { Button, Collapse, CardBody, Card } from "reactstrap";
 import TypeIt from "typeit-react";
-
-//context
-import { AboutContext } from "../context/AboutContext";
 
 //images
 import profile from "../imgs/profile.jpg";
 
+//context
+import { AboutContext } from "../context/AboutContext";
+
 const About = () => {
   const { aboutOpen } = useContext(AboutContext);
+
   return (
     <div id="about">
       <h1 className="homeTitle">Jessica Duell</h1>
-      <UncontrolledCollapse toggler="#about" isOpen={aboutOpen}>
+      <Collapse isOpen={aboutOpen}>
         <Card>
           <CardBody>
             <img src={profile} alt="profile" />
@@ -24,7 +25,7 @@ const About = () => {
             </p>
           </CardBody>
         </Card>
-      </UncontrolledCollapse>
+      </Collapse>
       <Button href="https://github.com/jduell12" target="blank">
         Github
       </Button>
